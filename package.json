@@ -1,0 +1,68 @@
+{
+  "name": "jwt-auth",
+  "version": "1.0.0",
+  "description": "🔐 Production-ready JWT authentication API with refresh tokens, CSRF protection, Redis storage, and comprehensive logging",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js",
+    "test": "NODE_ENV=test jest --runInBand --forceExit --detectOpenHandles",
+    "test:ci": "NODE_ENV=test jest --runInBand --forceExit --detectOpenHandles --ci --coverage",
+    "lint": "eslint . --ext .js",
+    "lint:fix": "eslint . --ext .js --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "validate": "npm run lint && npm run format:check && npm test"
+  },
+  "keywords": [
+    "jwt",
+    "authentication",
+    "refresh-token",
+    "csrf",
+    "redis",
+    "mongodb",
+    "express",
+    "security",
+    "rate-limiting",
+    "winston",
+    "morgan"
+  ],
+  "author": "n1kFord",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n1kFord/jwt-auth.git"
+  },
+  "bugs": {
+    "url": "https://github.com/n1kFord/jwt-auth/issues"
+  },
+  "homepage": "https://github.com/n1kFord/jwt-auth#readme",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "chalk": "^4.1.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.5.2",
+    "express-validator": "^7.3.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.4.1",
+    "morgan": "^1.10.1",
+    "redis": "^5.12.1",
+    "winston": "^3.19.0"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.10",
+    "eslint": "^10.4.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.6.0",
+    "jest": "^30.4.1",
+    "nodemon": "^3.1.14",
+    "prettier": "^3.8.3",
+    "supertest": "^7.2.2"
+  }
+}
