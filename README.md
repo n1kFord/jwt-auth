@@ -40,7 +40,7 @@
 ```bash
 # Clone repository
 git clone https://github.com/n1kFord/jwt-auth.git
-cd jwt-auth-api
+cd jwt-auth
 
 # Install dependencies
 npm install
