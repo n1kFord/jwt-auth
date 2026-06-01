@@ -1,6 +1,6 @@
 # 🔐 JWT Authentication API
 
-[![Node.js Version](https://img.shields.io/badge/node-%3E%3D20-brightgreen)](https://nodejs.org/) [![Express.js Version](https://img.shields.io/badge/express-5.x-blue)](https://expressjs.com/) [![MongoDB](https://img.shields.io/badge/mongodb-6.x-green)](https://www.mongodb.com/) [![Redis](https://img.shields.io/badge/redis-7.x-red)](https://redis.io/) [![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE) [![Tests](https://github.com/n1kFord/jwt-auth/actions/workflows/test.yml/badge.svg)](https://github.com/n1kFord/jwt-auth/actions/workflows/test.yml) [![Code Style](https://img.shields.io/badge/code_style-prettier-ff69b4)](https://prettier.io/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](https://github.com/n1kFord/jwt-auth-api/pulls)
+[![Node.js Version](https://img.shields.io/badge/node-%3E%3D20-brightgreen)](https://nodejs.org/) [![Express.js Version](https://img.shields.io/badge/express-5.x-blue)](https://expressjs.com/) [![MongoDB](https://img.shields.io/badge/mongodb-6.x-green)](https://www.mongodb.com/) [![Redis](https://img.shields.io/badge/redis-7.x-red)](https://redis.io/) [![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE) [![Tests](https://github.com/n1kFord/jwt-auth/actions/workflows/test.yml/badge.svg)](https://github.com/n1kFord/jwt-auth/actions/workflows/test.yml) [![Code Style](https://img.shields.io/badge/code_style-prettier-ff69b4)](https://prettier.io/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](https://github.com/n1kFord/jwt-auth/pulls)
 
 > 🚀 Production-ready JWT authentication API with refresh tokens, CSRF protection, and Redis storage.
 
@@ -68,7 +68,7 @@ JWT_REFRESH_SECRET=your-refresh-secret
 ## 📁 Project Structure
 
 ```
-jwt-auth-api/
+jwt-auth/
 ├── src/
 │   ├── config/          # Configuration (DB, Redis, constants)
 │   ├── middlewares/     # Auth, CSRF, validation, logging
