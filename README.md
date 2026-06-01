@@ -184,9 +184,12 @@ docker-compose down
 
 Contributions are welcome! Feel free to open issues and pull requests.
 
-## 📄 License
+## 📄 **License**
 
-MIT © [n1kFord](https://github.com/n1kFord)
+This project is licensed under the [MIT License](./LICENSE).  
+Feel free to use, modify, and distribute with attribution.
+
+> 💡 Created with care by [@n1kFord](https://github.com/n1kFord)
 
 ---
 
