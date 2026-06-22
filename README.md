@@ -6,6 +6,8 @@
 
 > 📚 **Educational project** for learning modern authentication patterns with Node.js.
 
+> 🔄 Looking for a session-based alternative? Check out: https://github.com/n1kFord/session-auth
+
 ## ✨ Features
 
 - 🔑 **JWT Access & Refresh Tokens** with automatic rotation
