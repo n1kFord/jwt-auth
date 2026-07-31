@@ -34,37 +34,65 @@
 
 ### Prerequisites
 
-- Node.js 20+
-- Docker & Docker Compose
+- Docker & Docker Compose (recommended)
+- Node.js >= 20 (for local development)
 
-### Installation
+### With Docker (Recommended)
 
 ```bash
 # Clone repository
 git clone https://github.com/n1kFord/jwt-auth.git
 cd jwt-auth
 
+# Start all services (MongoDB, Redis, and API)
+docker compose up -d
+
+# Check logs
+docker compose logs -f
+
+# Stop services
+docker compose down
+
+# Stop and remove volumes (clears database)
+docker compose down -v
+```
+
+### Local Development
+
+```bash
 # Install dependencies
 npm install
 
-# Copy environment variables
+# Setup environment
 cp .env.example .env
+# Edit .env with your configuration
 
-# Start MongoDB and Redis
-docker-compose up -d
+# Start MongoDB and Redis (using Docker)
+docker compose up -d mongo redis
 
-# Run development server
+# Start development server
 npm run dev
+
+# Production mode
+npm start
 ```
 
 ### Environment Variables
 
-```env
+```bash
+# Server
 PORT=8080
+NODE_ENV=development
+
+# MongoDB
 MONGO_URI=mongodb://localhost:27017/authDB
+
+# Redis
 REDIS_CLIENT_URI=redis://localhost:6379
-JWT_SECRET=your-jwt-secret
-JWT_REFRESH_SECRET=your-refresh-secret
+
+# JWT Secrets (generate strong secrets — at least 32 chars!)
+JWT_SECRET=your_super_secret_jwt_key_min_32_chars
+JWT_REFRESH_SECRET=your_super_secret_refresh_key_min_32_chars
 ```
 
 ## 📁 Project Structure
